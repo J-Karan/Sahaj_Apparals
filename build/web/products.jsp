@@ -58,7 +58,6 @@
                             <% } %>
                         </div>
                         <h4 class="price">$<%= String.format("%.2f", product.getPrice()*0.012) %></h4>
-                        <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
                     </div>
                 </a>
                 <%
