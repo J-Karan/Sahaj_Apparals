@@ -139,7 +139,7 @@
                     </div>
                     <div class="big-banners-2">
                         <h4>spring/summer</h4>
-                        <h2>upcomming season</h2>
+                        <h2>Up Coming season</h2>
                         <span>The best classic dress is on sale at cara</span>
                         <button class="banner-btn">Collection</button>
                     </div>
@@ -198,7 +198,7 @@
                     <br>
                     <a href="#">Sign In</a>
                     <a href="#">View Cart</a>
-                    <a href="#">My Wishlist</a>
+                    <a href="#">My Wish List</a>
                     <a href="#">Track My Order</a>
                     <a href="#">Help</a>
                 </div>
