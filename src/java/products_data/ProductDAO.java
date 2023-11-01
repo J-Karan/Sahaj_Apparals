@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+import java.util.Map; 
 
 public class ProductDAO {
 
@@ -149,4 +149,42 @@ public class ProductDAO {
 
         return product;
     }
+
+    public List<CartItem> getCart(String phoneNumber) {
+        List<CartItem> cartItems = new ArrayList<>();
+        Connection connection = null;
+
+        try {
+            connection = getConnection();
+            String sql = "SELECT ProductDescription ,ProductName, ImageURL, Price, Quantity FROM cart, products WHERE Phone_Number = ? AND products.ProductCode = cart.ProductCode";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setString(1, phoneNumber);
+
+            ResultSet resultSet = statement.executeQuery();
+
+            while (resultSet.next()) {
+                String productName = resultSet.getString("ProductName");
+                String productURL = resultSet.getString("ImageURL");
+                String productDescription = resultSet.getString("ProductDescription");
+                int quantity = resultSet.getInt("Quantity");
+                Double price = resultSet.getDouble("Price");
+
+                CartItem cart = new CartItem(productName, productURL, quantity, price,productDescription);
+                cartItems.add(cart);
+            }
+        } catch (SQLException | ClassNotFoundException e) {
+            System.out.println(e.toString());
+        } finally {
+            if (connection != null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    System.out.println(e.toString());
+                }
+            }
+        }
+
+        return cartItems;
+    }
+
 }

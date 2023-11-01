@@ -47,7 +47,7 @@ public class Login extends HttpServlet {
                                 if (request.getParameter("redirectTo") != null && !request.getParameter("redirectTo").isEmpty()) {
                                     request.setAttribute("redirectURL", request.getParameter("redirectTo"));
                                 } else {
-                                    request.setAttribute("redirectURL", "Login.jsp");
+                                    request.setAttribute("redirectURL", "index.jsp");
                                 }
                             } else {
                                 request.setAttribute("Message", "Login unsuccessful");

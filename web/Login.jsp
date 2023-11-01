@@ -275,84 +275,84 @@
     </head>
 
     <body>
-        <header><jsp:include page="navbar.jsp" />
+        <jsp:include page="navbar.jsp" />
 
 
-            <div class="container" id="container">
-                <div class="form-container sign-up-container">
-                    <form action="SignUp" method="POST">
-                        <br><br><br>
-                        <h1>Create Account</h1>
-                        <div class="social-container">
-                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                        <span style="color:black;">or use your email for registration</span>
-                        <input type="text" placeholder="Name" name="name" />
-                        <input type="email" placeholder="Email" name="email" />
-                        <input type="tel" placeholder="phone Number" name="phone_number" />
-                        <input type="password" placeholder="Password" name="password" />
-                        <input type="text" placeholder="Marital Status" name="marital_status" />
-                        <input type="text" placeholder="Address" name="shipping_address" />
-                        <% if (request.getParameter("redirectTo") != null && !request.getParameter("redirectTo").isEmpty()) { %>
-                        <input type="hidden" name="redirectTo" value="<%= request.getParameter("redirectTo") %>">
-                        <% } %>
-                        <button>Sign Up</button>
-                    </form>
-                </div>
-                <div class="form-container sign-in-container">
-                    <form action="Login" method="POST">
-                        <h1>Sign in</h1>
-                        <div class="social-container">
-                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                        <span style="color:black;">or use your account</span>
-                        <input type="tel" placeholder="Phone Number" name="phone_number"/>
-                        <input type="password" placeholder="Password" name="password"/>
-                        <a href="#">Forgot your password?</a>
-                        <%
-                            String redirectTo = request.getParameter("redirectTo");
-                            if (redirectTo != null && !redirectTo.isEmpty()) {
-                        %>
-                        <input type="hidden" name="redirectTo" value="<%= redirectTo %>">
-                        <%
-                            }
-                        %>
-                        <button>Sign In</button>
-                    </form>
-                </div>
-                <div class="overlay-container">
-                    <div class="overlay">
-                        <div class="overlay-panel overlay-left">
-                            <h1 style="color: white;">Welcome Back!</h1>
-                            <p style="color: white;">To keep connected with us please login with your personal info</p>
-                            <button class="ghost" id="signIn">Sign In</button>
-                        </div>
-                        <div class="overlay-panel overlay-right">
-                            <h1 style="color: white;">Hello, Friend!</h1>
-                            <p style="color: white;">Enter your personal details and start journey with us</p>
-                            <button class="ghost" id="signUp">Sign Up</button>
-                        </div>
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="SignUp" method="POST">
+                    <br><br><br>
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span style="color:black;">or use your email for registration</span>
+                    <input type="text" placeholder="Name" name="name" />
+                    <input type="email" placeholder="Email" name="email" />
+                    <input type="tel" placeholder="phone Number" name="phone_number" />
+                    <input type="password" placeholder="Password" name="password" />
+                    <input type="text" placeholder="Marital Status" name="marital_status" />
+                    <input type="text" placeholder="Address" name="shipping_address" />
+                    <% if (request.getParameter("redirectTo") != null && !request.getParameter("redirectTo").isEmpty()) { %>
+                    <input type="hidden" name="redirectTo" value="<%= request.getParameter("redirectTo") %>">
+                    <% } %>
+                    <button>Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="Login" method="POST">
+                    <h1>Sign in</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span style="color:black;">or use your account</span>
+                    <input type="tel" placeholder="Phone Number" name="phone_number"/>
+                    <input type="password" placeholder="Password" name="password"/>
+                    <a href="#">Forgot your password?</a>
+                    <%
+                        String redirectTo = request.getParameter("redirectTo");
+                        if (redirectTo != null && !redirectTo.isEmpty()) {
+                    %>
+                    <input type="hidden" name="redirectTo" value="<%= redirectTo %>">
+                    <%
+                        }
+                    %>
+                    <button>Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1 style="color: white;">Welcome Back!</h1>
+                        <p style="color: white;">To keep connected with us please login with your personal info</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1 style="color: white;">Hello, Friend!</h1>
+                        <p style="color: white;">Enter your personal details and start journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <script>
-                const signUpButton = document.getElementById('signUp');
-                const signInButton = document.getElementById('signIn');
-                const container = document.getElementById('container');
+        <script>
+            const signUpButton = document.getElementById('signUp');
+            const signInButton = document.getElementById('signIn');
+            const container = document.getElementById('container');
 
-                signUpButton.addEventListener('click', () => {
-                    container.classList.add("right-panel-active");
-                });
+            signUpButton.addEventListener('click', () => {
+                container.classList.add("right-panel-active");
+            });
 
-                signInButton.addEventListener('click', () => {
-                    container.classList.remove("right-panel-active");
-                });
-            </script>
+            signInButton.addEventListener('click', () => {
+                container.classList.remove("right-panel-active");
+            });
+        </script>
     </body>
 
 </html>

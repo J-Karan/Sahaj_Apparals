@@ -58,7 +58,7 @@
                     if (user == null) {
                    %>Login.jsp<%
                     } else {
-                   %>bag.jsp<%
+                   %>Cart.jsp<%
                     }
                    %>">
                     <i class="fa fa-bag-shopping"></i>
