@@ -5,16 +5,18 @@
         <group>
             <file>file:/C:/Users/Karan/Documents/NetBeansProjects/Sahaj%20Apperals/web/Login.jsp</file>
             <file>file:/C:/Users/Karan/Documents/NetBeansProjects/Sahaj%20Apperals/web/index.jsp</file>
+            <file>file:/C:/Users/Karan/Documents/NetBeansProjects/Sahaj%20Apperals/src/java/products_data/CartItem.java</file>
             <file>file:/C:/Users/Karan/Documents/NetBeansProjects/Sahaj%20Apperals/src/java/products_data/ProductDAO.java</file>
-            <file>file:/C:/Users/Karan/Documents/NetBeansProjects/Sahaj%20Apperals/web/navbar.jsp</file>
             <file>file:/C:/Users/Karan/Documents/NetBeansProjects/Sahaj%20Apperals/web/viewproduct.jsp</file>
+            <file>file:/C:/Users/Karan/Documents/NetBeansProjects/Sahaj%20Apperals/src/java/Logout.java</file>
+            <file>file:/C:/Users/Karan/Documents/NetBeansProjects/Sahaj%20Apperals/src/java/SignUp.java</file>
+            <file>file:/C:/Users/Karan/Documents/NetBeansProjects/Sahaj%20Apperals/src/java/addToCart.java</file>
+            <file>file:/C:/Users/Karan/Documents/NetBeansProjects/Sahaj%20Apperals/src/java/products_data/Product.java</file>
+            <file>file:/C:/Users/Karan/Documents/NetBeansProjects/Sahaj%20Apperals/web/navbar.jsp</file>
             <file>file:/C:/Users/Karan/Documents/NetBeansProjects/Sahaj%20Apperals/web/singprod.css</file>
             <file>file:/C:/Users/Karan/Documents/NetBeansProjects/Sahaj%20Apperals/web/products.jsp</file>
-            <file>file:/C:/Users/Karan/Documents/NetBeansProjects/Sahaj%20Apperals/src/java/Logout.java</file>
             <file>file:/C:/Users/Karan/Documents/NetBeansProjects/Sahaj%20Apperals/web/Cart.jsp</file>
-            <file>file:/C:/Users/Karan/Documents/NetBeansProjects/Sahaj%20Apperals/src/java/SignUp.java</file>
             <file>file:/C:/Users/Karan/Documents/NetBeansProjects/Sahaj%20Apperals/src/java/Login.java</file>
-            <file>file:/C:/Users/Karan/Documents/NetBeansProjects/Sahaj%20Apperals/src/java/addToCart.java</file>
         </group>
     </open-files>
 </project-private>
