@@ -55,9 +55,11 @@ public class SignUp extends HttpServlet {
             if (rowsInserted > 0) {
                 request.setAttribute("Message", "Sign up successful! Hashed Password: " + hashedPasswordStr);
                 request.setAttribute("indication", true);
+                request.setAttribute("redirectURL", "Login.jsp");
             } else {
                 request.setAttribute("Message", "Sign up failed due to a server error.");
                 request.setAttribute("indication", false);
+                request.setAttribute("redirectURL", "Login.jsp");
             }
 
             RequestDispatcher dispatcher = request.getRequestDispatcher("loading.jsp");
@@ -65,6 +67,7 @@ public class SignUp extends HttpServlet {
         } catch (ClassNotFoundException | SQLException e) {
             request.setAttribute("Message", "An error occurred: " + e.getMessage());
             request.setAttribute("indication", false);
+            request.setAttribute("redirectURL", "Login.jsp");
 
             RequestDispatcher dispatcher = request.getRequestDispatcher("loading.jsp");
             dispatcher.forward(request, response);
@@ -76,6 +79,7 @@ public class SignUp extends HttpServlet {
             } catch (SQLException e) {
                 request.setAttribute("Message", "An error occurred: " + e.getMessage());
                 request.setAttribute("indication", false);
+                request.setAttribute("redirectURL", "Login.jsp");
 
                 RequestDispatcher dispatcher = request.getRequestDispatcher("loading.jsp");
                 dispatcher.forward(request, response);

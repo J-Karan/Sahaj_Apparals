@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -294,6 +295,9 @@
                         <input type="password" placeholder="Password" name="password" />
                         <input type="text" placeholder="Marital Status" name="marital_status" />
                         <input type="text" placeholder="Address" name="shipping_address" />
+                        <% if (request.getParameter("redirectTo") != null && !request.getParameter("redirectTo").isEmpty()) { %>
+                        <input type="hidden" name="redirectTo" value="<%= request.getParameter("redirectTo") %>">
+                        <% } %>
                         <button>Sign Up</button>
                     </form>
                 </div>
@@ -309,6 +313,14 @@
                         <input type="tel" placeholder="Phone Number" name="phone_number"/>
                         <input type="password" placeholder="Password" name="password"/>
                         <a href="#">Forgot your password?</a>
+                        <%
+                            String redirectTo = request.getParameter("redirectTo");
+                            if (redirectTo != null && !redirectTo.isEmpty()) {
+                        %>
+                        <input type="hidden" name="redirectTo" value="<%= redirectTo %>">
+                        <%
+                            }
+                        %>
                         <button>Sign In</button>
                     </form>
                 </div>

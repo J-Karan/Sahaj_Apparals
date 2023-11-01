@@ -113,4 +113,40 @@ public class ProductDAO {
         return categoryList;
     }
 
+    public Product getProductDetails(int productCode) {
+        Product product = null;
+        Connection connection = null;
+
+        try {
+            connection = getConnection();
+            String sql = "SELECT * FROM products WHERE ProductCode = ?";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setInt(1, productCode);
+
+            ResultSet resultSet = statement.executeQuery();
+
+            if (resultSet.next()) {
+                String name = resultSet.getString("ProductName");
+                String brand = resultSet.getString("Brand");
+                Double price = resultSet.getDouble("Price");
+                String imageURL = resultSet.getString("ImageURL");
+                String description = resultSet.getString("ProductDescription");
+                Integer rating = resultSet.getInt("Rating");
+
+                product = new Product(productCode, name, brand, price, imageURL, description, rating);
+            }
+        } catch (SQLException | ClassNotFoundException e) {
+            System.out.println(e.toString());
+        } finally {
+            if (connection != null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    System.out.println(e.toString());
+                }
+            }
+        }
+
+        return product;
+    }
 }

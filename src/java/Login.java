@@ -44,7 +44,11 @@ public class Login extends HttpServlet {
                                 session.setAttribute("user", phoneNumber);
                                 request.setAttribute("Message", "Login successful");
                                 request.setAttribute("indication", true);
-                                request.setAttribute("redirectURL", "index.jsp");
+                                if (request.getParameter("redirectTo") != null && !request.getParameter("redirectTo").isEmpty()) {
+                                    request.setAttribute("redirectURL", request.getParameter("redirectTo"));
+                                } else {
+                                    request.setAttribute("redirectURL", "Login.jsp");
+                                }
                             } else {
                                 request.setAttribute("Message", "Login unsuccessful");
                                 request.setAttribute("indication", false);
@@ -59,6 +63,7 @@ public class Login extends HttpServlet {
                             request.setAttribute("redirectURL", "Login.jsp");
                             RequestDispatcher dispatcher = request.getRequestDispatcher("loading.jsp");
                             dispatcher.forward(request, response);
+
                         }
                     }
                 }

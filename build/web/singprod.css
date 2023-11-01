@@ -1,0 +1,39 @@
+/* Add these CSS rules to style the color and size options */
+.color-options {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.color-icon {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.color-icon.blue {
+    background-color: blue;
+}
+
+.color-icon.red {
+    background-color: red;
+}
+
+.color-icon.green {
+    background-color: green;
+}
+
+.size-options {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.size-options label {
+    display: inline-block;
+    margin-right: 10px;
+}
