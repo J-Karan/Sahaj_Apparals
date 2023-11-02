@@ -156,7 +156,7 @@
                 <div class="cart-products">
                     <%
                         String Number = (String) session.getAttribute("user");
-                        List<CartItem> cartItems = new ArrayList<>(); // Initialize cartItems
+                        List<CartItem> cartItems = new ArrayList<>();
                         double totalAmount = 0;
                         if (Number != null) {
                             cartItems = new ProductDAO().getCart(Number);
@@ -173,7 +173,7 @@
                             <p><%= cart.getDesc() %></p>
                         </div>
                         <div class="product-actions">
-                            <button style="margin-top: 30px;">Remove</button><br>
+                            <a href="removeFromCart?productCode=<%= cart.getProductCode() %>"><button style="margin-top: 30px;">Remove</button></a><br>
                         </div>
                     </div>
                     <%
@@ -207,7 +207,7 @@
                         <p style="text-decoration: underline;">Total: $<%= totalAmount %></p>
                     </div>
                     <div class="checkout-button">
-                        <button>Proceed to Buy</button>
+                        <a href="buyCart"><button>Proceed to Buy</button></a>
                     </div>
                 </div>
             </div>

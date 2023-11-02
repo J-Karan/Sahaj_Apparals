@@ -16,6 +16,14 @@
         <servlet-name>addToCart</servlet-name>
         <servlet-class>addToCart</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>removeFromCart</servlet-name>
+        <servlet-class>removeFromCart</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>buyCart</servlet-name>
+        <servlet-class>buyCart</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
@@ -31,5 +39,13 @@
     <servlet-mapping>
         <servlet-name>addToCart</servlet-name>
         <url-pattern>/addToCart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>removeFromCart</servlet-name>
+        <url-pattern>/removeFromCart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>buyCart</servlet-name>
+        <url-pattern>/buyCart</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -156,7 +156,7 @@ public class ProductDAO {
 
         try {
             connection = getConnection();
-            String sql = "SELECT ProductDescription ,ProductName, ImageURL, Price, Quantity FROM cart, products WHERE Phone_Number = ? AND products.ProductCode = cart.ProductCode";
+            String sql = "SELECT cart.ProductCode , ProductDescription , ProductName, ImageURL, Price, Quantity FROM cart, products WHERE Phone_Number = ? AND products.ProductCode = cart.ProductCode";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setString(1, phoneNumber);
 
@@ -168,8 +168,9 @@ public class ProductDAO {
                 String productDescription = resultSet.getString("ProductDescription");
                 int quantity = resultSet.getInt("Quantity");
                 Double price = resultSet.getDouble("Price");
+                int productCode=resultSet.getInt("ProductCode");
 
-                CartItem cart = new CartItem(productName, productURL, quantity, price,productDescription);
+                CartItem cart = new CartItem(productName, productURL, quantity, price,productDescription,productCode);
                 cartItems.add(cart);
             }
         } catch (SQLException | ClassNotFoundException e) {
