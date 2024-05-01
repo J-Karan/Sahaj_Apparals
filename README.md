@@ -24,7 +24,7 @@ Let's code, collaborate, and create together! :tada:
 
 ### Homepage
 
-![Homepage Screenshot 1](Sahaj Apperals SS/Home Page - 1.png)
+![Homepage Screenshot 1](https://github.com/J-Karan/Sahaj_Apparals/blob/4c33f914852de5a57ca71498b5059879ab4a6293/Sahaj%20Apperals%20SS/Home%20Page%20-%201.png)
 ![Homepage Screenshot 2](Sahaj Apperals SS/Home Page - 2.png)
 ![Homepage Screenshot 3](Sahaj Apperals SS/Home Page - 3.png)
 
