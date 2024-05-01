@@ -25,15 +25,15 @@ Let's code, collaborate, and create together! :tada:
 ### Homepage
 
 ![Homepage Screenshot 1](https://github.com/J-Karan/Sahaj_Apparals/blob/4c33f914852de5a57ca71498b5059879ab4a6293/Sahaj%20Apperals%20SS/Home%20Page%20-%201.png)
-![Homepage Screenshot 2](Sahaj Apperals SS/Home Page - 2.png)
-![Homepage Screenshot 3](Sahaj Apperals SS/Home Page - 3.png)
+![Homepage Screenshot 2](https://github.com/J-Karan/Sahaj_Apparals/blob/69ae334181af046d808e040f7670f34940525a8e/Sahaj%20Apperals%20SS/Home%20Page%20-%202.png)
+![Homepage Screenshot 3](https://github.com/J-Karan/Sahaj_Apparals/blob/69ae334181af046d808e040f7670f34940525a8e/Sahaj%20Apperals%20SS/Home%20Page%20-%203.png)
 
 ### Login and Signup
 
-![Login Screenshot 1](Sahaj Apperals SS/Login - 1.png)
-![Signup Screenshot 1](Sahaj Apperals SS/SignUp - 1.png)
+![Login Screenshot 1](https://github.com/J-Karan/Sahaj_Apparals/blob/69ae334181af046d808e040f7670f34940525a8e/Sahaj%20Apperals%20SS/Login%20-%201.png)
+![Signup Screenshot 1](https://github.com/J-Karan/Sahaj_Apparals/blob/69ae334181af046d808e040f7670f34940525a8e/Sahaj%20Apperals%20SS/SignUp%20-%201.png)
 
 ### Products
 
-![Products Screenshot 1](Sahaj Apperals SS/Product - 1.png)
-![Products Screenshot 2](Sahaj Apperals SS/Product - 2.png)
+![Products Screenshot 1](https://github.com/J-Karan/Sahaj_Apparals/blob/69ae334181af046d808e040f7670f34940525a8e/Sahaj%20Apperals%20SS/Product%20-%201.png)
+![Products Screenshot 2](https://github.com/J-Karan/Sahaj_Apparals/blob/69ae334181af046d808e040f7670f34940525a8e/Sahaj%20Apperals%20SS/Product%20-%202.png)
